@@ -1,1 +1,5 @@
-I want to add tmux and bash configuration here.
+tmux config file requires tmux plugin manager installation:
+
+```bash
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
