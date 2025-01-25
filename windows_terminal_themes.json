@@ -137,4 +137,28 @@
   "brightRed": "#ffae9f",
   "brightWhite": "#cac9dd",
   "brightYellow": "#f0c5a9"
-}
+},
+
+{
+            "background": "#090300",
+            "black": "#090300",
+            "blue": "#01A0E4",
+            "brightBlack": "#5C5855",
+            "brightBlue": "#807D7C",
+            "brightCyan": "#CDAB53",
+            "brightGreen": "#3A3432",
+            "brightPurple": "#D6D5D4",
+            "brightRed": "#E8BBD0",
+            "brightWhite": "#F7F7F7",
+            "brightYellow": "#4A4543",
+            "cursorColor": "#A5A2A2",
+            "cyan": "#B5E4F4",
+            "foreground": "#A5A2A2",
+            "green": "#01A252",
+            "name": "3024 Night",
+            "purple": "#A16A94",
+            "red": "#DB2D20",
+            "selectionBackground": "#4A4543",
+            "white": "#A5A2A2",
+            "yellow": "#FDED02"
+        }
