@@ -1,7 +1,15 @@
-tmux config file requires plugin manager installation:
+# Usage
+
+To save the current machine config run `save.sh`.
+To load the current repo config - run `load.sh`.
+
+# tmux
+
+To config tmux properly you should install
+[tpm plugin manager](https://github.com/tmux-plugins/tpm) installation:
 
 ```bash
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
 
-Don't forget to install tmux plugins by pressing `<PrefixKey+I>`.
+To install tmux plugins by pressing `<PrefixKey+I>`.
