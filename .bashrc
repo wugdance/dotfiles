@@ -144,18 +144,8 @@ fi
 export BROWSER=wslview
 
 # Setup prompt
-
 # Enable vi mode
 set -o vi
-
-# # Define function to determine current vi mode.
-# function vi_mode() {
-#     if [[ $1 == 0 ]]; then
-# 	echo "(normal)"
-#     else
-# 	echo "(insert)"
-#     fi
-# }
 
 PROMPT_COMMAND='PS1_CMD1=$(__git_ps1 "|(%s)")'
 
@@ -170,6 +160,3 @@ PS1+='\n'               # Newline
 PS1+='\[\e[0;1m\]'      # Bold text
 PS1+='\$'               # Dollar sign
 PS1+='\[\e[0m\] '       # Reset formatting
-
-# # Trap DEBUG signal to update vi mode on change
-# trap 'VI_MODE=$(vi_mode $?)' DEBUG
