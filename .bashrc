@@ -149,7 +149,6 @@ set -o vi
 
 PROMPT_COMMAND='PS1_CMD1=$(__git_ps1 "|(%s)")'
 
-# PS1='${VI_MODE}|'	# Current vi mode
 PS1='\[\e[38;5;71m\]'  # Time color
 PS1+='\t'               # Time
 PS1+='\[\e[97m\]'       # Reset color
@@ -157,6 +156,5 @@ PS1+='${PS1_CMD1}|'     # Git branch info
 PS1+='\[\e[38;5;152m\]' # Directory color
 PS1+='\W'               # Current working directory
 PS1+='\n'               # Newline
-PS1+='\[\e[0;1m\]'      # Bold text
-PS1+='\$'               # Dollar sign
-PS1+='\[\e[0m\] '       # Reset formatting
+PS1+='\[\e[0m\]'       # Reset formatting
+PS1+=' '               # Add space
