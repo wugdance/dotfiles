@@ -1,6 +1,6 @@
 # Annotation
 
-The dotfiles are primarely used and tested on wsl 2 Ubuntu 22.04 distribution.
+The dotfiles are primarily used and tested on wsl 2 Ubuntu 22.04 distribution.
 
 # Usage
 
