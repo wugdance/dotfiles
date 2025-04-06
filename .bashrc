@@ -158,3 +158,4 @@ PS1+='\W'               # Current working directory
 PS1+='\n'               # Newline
 PS1+='\[\e[0m\]'       # Reset formatting
 PS1+=' '               # Add space
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
