@@ -26,7 +26,7 @@ fi
 
 cp ${glzr}/glazewm/config.yaml ./.glzr/glazewm/config.yaml
 cp ${glzr}/zebar/settings.json ./.glzr/zebar/settings.json
-cp -r ${glzr}/zebar/starter-v2/ ./.glzr/zebar/starter-v2
+cp -rv ${glzr}/zebar/starter-v2/. ./.glzr/zebar/starter-v2/
 #--------------------------------------------
 
 echo "The saving process have been completed."
