@@ -23,7 +23,7 @@ glzr="/mnt/c/Users/${win_user}/.glzr"
 
 cp ./.glzr/glazewm/config.yaml ${glzr}/glazewm/config.yaml
 cp ./.glzr/zebar/settings.json ${glzr}/zebar/settings.json
-cp -r ./.glzr/zebar/starter-v2 ${glzr}/zebar/starter-v2/
+cp -r ./.glzr/zebar/starter-v2/. ${glzr}/zebar/starter-v2/
 #--------------------------------------------
 
 echo "The loading process have been completed."
