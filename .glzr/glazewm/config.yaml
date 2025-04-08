@@ -151,7 +151,7 @@ workspaces:
 window_rules:
   - commands: ['move --workspace 1']
     match:
-      - window_process: { regex: "WindowsTerminal" }
+      - window_process: { regex: "WindowsTerminal|wezterm" }
 
   - commands: ['move --workspace 2']
     match:
