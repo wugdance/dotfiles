@@ -7,6 +7,8 @@ win_home="/mnt/c/Users/${win_user}"
 cp -i ~/.tmux.conf ~/.tmux.conf.old
 cp -i ~/.bashrc ~/.bashrc.old
 cp -i ~/.inputrc ~/.inputrc.old
+cp -i ${win_home}/.wezterm.lua ${win_home}/.wezterm.lua.old
+# todo: you also should make checkpoint for glzr directory.
 
 # Load config from repo.
 echo "Loading tmux conf..."
