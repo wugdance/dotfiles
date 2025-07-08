@@ -13,6 +13,6 @@ config.color_scheme = "rose-pine"
 
 config.hide_tab_bar_if_only_one_tab = true
 config.window_decorations = "RESIZE"
-config.font_size = 16.0
+config.font_size = 20.0
 
 return config

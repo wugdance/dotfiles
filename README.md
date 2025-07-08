@@ -1,6 +1,6 @@
 # Annotation
 
-The dotfiles are primarily used and tested on Windows 10/11 WSL 2 Ubuntu 22.04 distribution.
+The dotfiles are primarily used and tested on Windows 11 WSL 2 Ubuntu 22.04 distribution.
 
 # Usage
 
@@ -19,6 +19,14 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 To install tmux plugins press `<PrefixKey+I>`.
 
 # References
+
+## zsh
+
+- [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
+- [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
+- [zsh-completions](https://github.com/zsh-users/zsh-completions)
+- [zsh-vi-mode](https://github.com/jeffreytse/zsh-vi-mode)
+- [zsh-history-substring-search](https://github.com/zsh-users/zsh-history-substring-search)
 
 ## Installation
 

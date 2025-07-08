@@ -13,6 +13,9 @@ cp ~/.bashrc ./.bashrc
 echo "Copying readline config..."
 cp ~/.inputrc ./.inputrc
 
+echo "Copying zsh config..."
+cp ~/.zshrc ./.zshrc
+
 #--------------------------------------------
 echo "Copying the tiling manager config..."
 

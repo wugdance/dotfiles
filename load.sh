@@ -20,6 +20,9 @@ cp ./.bashrc ~/.bashrc
 echo "Loading readline conf..."
 cp ./.inputrc ~/.inputrc
 
+echo "Loading zsh conf..."
+cp ./.zshrc ~/.zshrc
+
 #--------------------------------------------
 echo "Loading the tiling manager config..."
 
