@@ -47,7 +47,7 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 # Wait until autosuggestions are initialized
 autoload -Uz add-zsh-hook
 function _bind_autosuggest_accept_key() {
-  bindkey '^y' autosuggest-accept
+  bindkey -M viins '^y' autosuggest-accept
 }
 add-zsh-hook precmd _bind_autosuggest_accept_key
 
