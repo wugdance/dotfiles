@@ -44,7 +44,12 @@ zstyle ':completion::complete:*' cache-path ~/.zsh/cache
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'  # Case-insensitive completion
 
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-bindkey '^y' autosuggest-accept
+# Wait until autosuggestions are initialized
+autoload -Uz add-zsh-hook
+function _bind_autosuggest_accept_key() {
+  bindkey '^y' autosuggest-accept
+}
+add-zsh-hook precmd _bind_autosuggest_accept_key
 
 source ~/.zsh/zsh-history-substring-search/zsh-history-substring-search.zsh
 bindkey -M vicmd 'k' history-substring-search-up
