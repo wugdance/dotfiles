@@ -28,6 +28,7 @@ alias ll='ls -lah --color=auto'
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
+alias save-dotfiles='~/dotfiles/save.sh'
 
 function ape() { # activate poetry environment
     source "$(poetry env info --path)/bin/activate"

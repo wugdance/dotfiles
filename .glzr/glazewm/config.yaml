@@ -133,7 +133,12 @@ workspaces:
     keep_alive: true
 
   - name: '4'
+    bind_to_monitor: 1
+    keep_alive: true
+
   - name: '5'
+    bind_to_monitor: 1
+    keep_alive: true
 
   - name: '6'
     bind_to_monitor: 1
@@ -144,6 +149,8 @@ workspaces:
     keep_alive: true
 
   - name: '8'
+    bind_to_monitor: 1
+    keep_alive: true
 
   - name: '9'
     bind_to_monitor: 0
@@ -156,18 +163,6 @@ window_rules:
   - commands: ['move --workspace 2']
     match:
       - window_process: { regex: "firefox" }
-
-  - commands: ['move --workspace 3']
-    match:
-      - window_process: { regex: "gimp" }
-
-  - commands: ['move --workspace 6']
-    match:
-      - window_process: { regex: "Chatzone" }
-
-  - commands: ['move --workspace 7']
-    match:
-      - window_process: { regex: "MetaZon|azuredatastudio" }
 
   - commands: ['move --workspace 9']
     match:
