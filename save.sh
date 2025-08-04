@@ -5,16 +5,16 @@ win_home="/mnt/c/Users/${win_user}"
 
 # Copy from user home directory to repo directory.
 echo "Copying tmux config..."
-cp ~/.tmux.conf ./.tmux.conf
+cp ~/.tmux.conf ~/dotfiles/tmux.conf
 
 echo "Copying bash config..."
-cp ~/.bashrc ./.bashrc
+cp ~/.bashrc ~/dotfiles/bashrc
 
 echo "Copying readline config..."
-cp ~/.inputrc ./.inputrc
+cp ~/.inputrc ~/dotfiles/inputrc
 
 echo "Copying zsh config..."
-cp ~/.zshrc ./.zshrc
+cp ~/.zshrc ~/dotfiles/zshrc
 
 #--------------------------------------------
 echo "Copying the tiling manager config..."
@@ -22,19 +22,19 @@ echo "Copying the tiling manager config..."
 glzr="${win_home}/.glzr"
 
 if [ ! -d ./.glzr ]; then
-    mkdir ./.glzr
+    mkdir ~/dotfiles/glzr
 fi
 
 if [ ! -d ./.glzr/zebar ]; then
-    mkdir ./.glzr/zebar
+    mkdir ~/dotfiles/.glzr/zebar
 fi
 
-cp ${glzr}/glazewm/config.yaml ./.glzr/glazewm/config.yaml
-cp ${glzr}/zebar/settings.json ./.glzr/zebar/settings.json
-cp -r ${glzr}/zebar/starter-v2/. ./.glzr/zebar/starter-v2/
+cp ${glzr}/glazewm/config.yaml ~/dotfiles/.glzr/glazewm/config.yaml
+cp ${glzr}/zebar/settings.json ~/dotfiles/.glzr/zebar/settings.json
+cp -r ${glzr}/zebar/starter-v2/. ~/dotfiles/.glzr/zebar/starter-v2/
 #--------------------------------------------
 
 echo "Saving wezterm config..."
-cp ${win_home}/.wezterm.lua ./.wezterm.lua
+cp ${win_home}/.wezterm.lua ~/dotfiles/.wezterm.lua
 
 echo "The saving process have been completed."
