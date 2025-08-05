@@ -17,6 +17,8 @@ export EDITOR="nvim"
 export VISUAL="nvim"
 export MANPAGER="nvim +Man!"
 
+export PATH="$PATH:$HOME/.cargo/bin"
+
 #-------------------------- Prompt ------------------------------------
 autoload -Uz colors && colors
 PS1="%{$fg[cyan]%}%1~%{$reset_color%} $ "
