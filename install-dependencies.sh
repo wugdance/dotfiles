@@ -1,13 +1,29 @@
 #!/usr/bin/bash
 set -e
-sudo apt upgrade && sudo apt update -y
 
+sudo apt upgrade && sudo apt update -y
+sudo apt install wget git -y
+
+curl https://sh.rustup.rs -sSf | sh
+
+cargo install --locked bat
+bat cache --build
+
+sudo apt install lazygit -y
+
+# ----------------------------- delta ---------------------------------
+cargo install git-delta
+mkdir $HOME/.config/delta
+# todo: is it robust way of doing it?
+wget -P $HOME/.config/delta https://raw.githubusercontent.com/dandavison/delta/main/themes.gitconfig
+
+# ------------------------------ git ----------------------------------
+# todo:
+# * delta setup
 
 # todo:
-# * install delta
 # * install wezterm
 # * glazewm
-# * install bat + cargo + latest version that is compitable with delta
 
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
