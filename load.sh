@@ -14,16 +14,16 @@ cp -i ${win_home}/.wezterm.lua ${win_home}/.wezterm.lua.old
 echo "Loading tmux conf..."
 cp ./.tmux.conf ~/.tmux.conf
 
-echo "Loading bash conf..."
-cp ./.bashrc ~/.bashrc
-
-echo "Loading readline conf..."
-cp ./.inputrc ~/.inputrc
-
 echo "Loading zsh conf..."
 cp ./.zshrc ~/.zshrc
 
-#--------------------------------------------
+echo "Loading bat config..."
+cp -r ./bat/. ~/.config/bat/
+
+echo "Loading lazygit config..."
+cp -r ./lazygit/. ~/.config/lazygit/
+
+#---------------------------------------------------------------------
 echo "Loading the tiling manager config..."
 
 glzr="${win_home}/.glzr"

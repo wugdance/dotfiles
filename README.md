@@ -33,9 +33,7 @@ To install tmux plugins press `<PrefixKey+I>`.
 - [wezterm](https://wezterm.org/installation.html)
 - [tmux](https://github.com/tmux/tmux/wiki/Installing)
 - [glazewm](https://github.com/glzr-io/glazewm?tab=readme-ov-file#installation)
-- [gimp](https://www.gimp.org/downloads/)
 
 ## Others
 
 - [betterfox](https://github.com/yokoffing/BetterFox)
-- [amnezia-vpn](https://github.com/amnezia-vpn)

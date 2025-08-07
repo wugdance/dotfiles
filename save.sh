@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 win_user=$(cmd.exe /C "echo %USERNAME%" 2>/dev/null | tr -d '\r')
 win_home="/mnt/c/Users/${win_user}"
 
@@ -7,16 +8,17 @@ win_home="/mnt/c/Users/${win_user}"
 echo "Copying tmux config..."
 cp ~/.tmux.conf ~/dotfiles/tmux.conf
 
-echo "Copying bash config..."
-cp ~/.bashrc ~/dotfiles/bashrc
-
-echo "Copying readline config..."
-cp ~/.inputrc ~/dotfiles/inputrc
-
 echo "Copying zsh config..."
 cp ~/.zshrc ~/dotfiles/zshrc
 
+echo "Copying lazygit config..."
+cp -r ~/.config/lazygit ~/dotfiles/lazygit
+
+echo "Copying bat config..."
+cp -r ~/.config/bat ~/dotfiles/bat
+
 #--------------------------------------------
+# todo: check that i'm in wsl before perfoming copy
 echo "Copying the tiling manager config..."
 
 glzr="${win_home}/.glzr"

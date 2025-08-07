@@ -1,0 +1,6 @@
+services:
+  'gitlab.ozon.ru': 'gitlab:gitlab.ozon.ru'
+git:
+  paging:
+    colorArg: always
+    pager: delta --dark --paging=never
