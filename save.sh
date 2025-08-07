@@ -6,16 +6,22 @@ win_home="/mnt/c/Users/${win_user}"
 
 # Copy from user home directory to repo directory.
 echo "Copying tmux config..."
-cp ~/.tmux.conf ~/dotfiles/tmux.conf
+cp ~/.tmux.conf ~/dotfiles/.tmux.conf
 
 echo "Copying zsh config..."
-cp ~/.zshrc ~/dotfiles/zshrc
+cp ~/.zshrc ~/dotfiles/.zshrc
 
+mkdir ~/dotfiles/lazygit
 echo "Copying lazygit config..."
-cp -r ~/.config/lazygit ~/dotfiles/lazygit
+cp -r ~/.config/lazygit/. ~/dotfiles/lazygit/
 
+mkdir ~/dotfiles/bat
 echo "Copying bat config..."
-cp -r ~/.config/bat ~/dotfiles/bat
+cp -r ~/.config/bat/. ~/dotfiles/bat/
+
+mkdir ~/dotfiles/delta
+echo "Copying delta config..."
+cp -r ~/.config/delta/. ~/dotfiles/delta/
 
 #--------------------------------------------
 # todo: check that i'm in wsl before perfoming copy

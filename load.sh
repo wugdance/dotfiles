@@ -15,11 +15,17 @@ cp ./.tmux.conf ~/.tmux.conf
 echo "Loading zsh conf..."
 cp ./.zshrc ~/.zshrc
 
+mkdir ~/.config/bat
 echo "Loading bat config..."
 cp -r ./bat/. ~/.config/bat/
 
+mkdir ~/.config/lazygit
 echo "Loading lazygit config..."
 cp -r ./lazygit/. ~/.config/lazygit/
+
+mkdir ~/.config/delta
+echo "Loading delta config..."
+cp -r ./delta/. ~/.config/delta/
 
 #---------------------------------------------------------------------
 echo "Loading the tiling manager config..."
