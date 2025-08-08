@@ -18,6 +18,7 @@ export VISUAL="nvim"
 export MANPAGER="nvim +Man!"
 
 export PATH="$PATH:$HOME/.cargo/bin"
+export PATH="$PATH:$HOME/.local/bin"
 
 #-------------------------- Prompt ------------------------------------
 autoload -Uz colors && colors
